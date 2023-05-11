@@ -33,7 +33,7 @@ class Completion:
         include_links: bool = False,
         detailed: bool = False,
         debug: bool = False,
-        proxy: Optional[str] = None,
+        proxy: Optional[str] = '127.0.0.1:7890',
     ) -> YouResponse:
         if chat is None:
             chat = []

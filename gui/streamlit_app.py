@@ -35,12 +35,12 @@ st.set_page_config(
 st.header('GPT4free GUI')
 
 # Add text area for user input and button to get answer
-question_text_area = st.text_area('🤖 Ask Any Question :', placeholder='Explain quantum computing in 50 words')
-if st.button('🧠 Think'):
+question_text_area = st.text_area('🤖 问我问题 :', placeholder='Explain quantum computing in 50 words')
+if st.button('🧠 思考'):
     answer = get_answer(question_text_area)
     escaped = answer.encode('utf-8').decode('unicode-escape')
     # Display answer
-    st.caption("Answer :")
+    st.caption("回答 :")
     st.markdown(escaped)
 
 # Hide Streamlit footer
