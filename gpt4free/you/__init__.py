@@ -38,7 +38,7 @@ class Completion:
     ) -> YouResponse:
         if chat is None:
             chat = []
-        print('proxy--------------' + proxy)
+        print('proxy--------------' + str(proxy))
         proxies = {'http': 'http://' + proxy, 'https': 'http://' + proxy} if proxy else {}
 
         client = Session(client_identifier='chrome_108')
